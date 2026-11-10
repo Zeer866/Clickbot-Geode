@@ -23,14 +23,14 @@ class $modify(CBBase, GJBaseGameLayer) {
         GJBaseGameLayer::handleButton(down, button, isPlayer1);
     }
 
-    void processCommands(float dt) {
+        void processCommands(float dt, bool isHalfTick, bool isLastTick) {
         auto& c = Clickbot::get();
         if (c.enabled() && !m_isEditor) {
             if (c.mode == Mode::Play) playClicksUntilNow(this);
             c.frame++;
         }
-        GJBaseGameLayer::processCommands(dt);
-    }
+        GJBaseGameLayer::processCommands(dt, isHalfTick, isLastTick);
+}
 };
 
 class $modify(CBPlay, PlayLayer) {
