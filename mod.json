@@ -1,0 +1,23 @@
+{
+  "geode": "5.11.2",
+  "gd": { "android": "2.2081" },
+  "version": "v1.0.0",
+  "id": "zeer866.clickbot",
+  "name": "Clickbot",
+  "developer": "Zeer866",
+  "description": "Graba tus clicks, corrige su timing y practica por secciones.",
+  "settings": {
+    "enabled": {
+      "type": "bool",
+      "name": "Activar Clickbot",
+      "default": true
+    },
+    "snap-frames": {
+      "type": "int",
+      "name": "Ajuste de timing (frames)",
+      "default": 1,
+      "min": 0,
+      "max": 4
+    }
+  }
+}
